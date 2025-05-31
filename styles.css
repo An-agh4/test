@@ -1,0 +1,159 @@
+body{
+    background-image: url('bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+    color: aliceblue;
+    margin: 0%;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.header{
+    width: 100%;
+    position:sticky;
+    top: 0px;
+    
+}
+
+.navbar{
+    margin: 10px;
+    background-color: rgba(137, 43, 226, 0.425);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    font-size: 20px;
+    list-style-type: none;
+    border:solid 2px pink;
+    border-radius: 15px;
+    
+   
+}
+
+.navbar li:hover{
+    transition: .1s ease;
+    transform: translateY(-5px);
+    color: rgb(100, 21, 153);
+    font-size: 22PX;
+}
+.home{
+    color: aliceblue;
+    background-image: url('homebg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    animation: color 5s;
+}
+
+.home img{
+    border: solid 2px transparent;
+    border-radius: 90%;
+}
+
+.home img:hover{
+    transition: .2s ease;
+    transform: scale(90%);
+    border-radius: 100%;
+}
+
+.about{
+    background-image: url('aboutbg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    display: inline-flex;
+    height: 100vh;
+}
+
+.about1{
+    width: 50%;
+   
+    text-align: center;
+}
+
+.about2{
+    width: 50%;
+}
+
+.contact{
+    color: black;
+    font-size: 20px;
+    background-image: url('contactbg.jpg');
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.contact h3{
+    text-align: center;
+    
+}
+
+.form{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.msg{
+    border: solid 3px rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    width: 50%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.msg button{
+    border: solid 2px rgb(0, 0, 0);
+    background-color: rgba(245, 10, 10, 0.74);
+    border-radius: 5px;
+    height: 25px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.msg label{
+    margin: 5px 0px 5px 0px;
+}
+
+.education{
+    background-image: url('educationbg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.projects{
+    height: 100vh;
+}
+
+/* animation */
+@keyframes color{
+    0%{
+        color: rgb(212, 19, 19);
+        transform: translateY(100px);
+    }
+    100%{
+        color: rgb(235, 227, 227);
+        transform: translateY(0px);
+    }
+}
